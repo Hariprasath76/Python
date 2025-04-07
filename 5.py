@@ -125,12 +125,30 @@ else:
 
 
 #Nested Loop:
+""" 
 colour = ["black","red","yellow"]
 object =["car","bike"]
 
 for i in colour:
     for j in object:
         print(i,j)
-        
+"""
+
+""" 
+rows = 27
+
+for i in range(rows):
+    print("#", end=" ")
+    for j in range(i):
+        print(chr(97 + j), end=" ")
+    print()
+"""
+
+
+rows = 4
+
+for i in range(1, rows + 1):
+    print("#" * i )
+
 
 
