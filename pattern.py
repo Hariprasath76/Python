@@ -105,20 +105,69 @@ while i<=num:
     i +=1
 """
 
+
+#Equal Triagle ->
+""" 
+    *
+   * *
+  * * * 
+ * * * *
+* * * * *
+"""
+"""
 num =int(input("Enter a num: "))
 symbol = str(input("Enter a symbol: "))
 
 white_space = num -1
 
-for i in range(1, num+1):
+for i in range(1, num+1): #start from 1 , num +1 
 
     for j in range(white_space):
-        print(" ", end ="")
+        print(" ", end ="") # Emtpy space.
     white_space -= 1
 
-    for k in range(1,i*2):
+    for k in range(1,i*2):  #start from 1 , i* by 2.
         print(symbol, end="")
     print()
+"""
+
+
+"""
+# Diamond Pattern using while loop
+n = 3  # height of upper half (excluding middle)
+i = 0
+# Upper half
+while i < n:
+    spaces = ' ' * (n - i)
+    stars = '*' * (2 * i + 1)
+    print(spaces + stars)
+    i += 1
+i = n - 2
+# Lower half
+while i >= 0:
+    spaces = ' ' * (n - i)
+    stars = '*' * (2 * i + 1)
+    print(spaces + stars)
+    i -= 1
+"""
+
+
+
+# Diamond Pattern using for loop
+n = 3  # height of upper half (excluding the middle line)
+
+# Upper half including middle line
+for i in range(n):
+    spaces = ' ' * (n - i)
+    stars = '*' * (2 * i + 1)
+    print(spaces + stars)
+
+# Lower half
+for i in range(n - 2, -1, -1):
+    spaces = ' ' * (n - i)
+    stars = '*' * (2 * i + 1)
+    print(spaces + stars)
+
 
 
 
